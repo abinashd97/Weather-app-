@@ -26,9 +26,8 @@ const WeatherCard = () => {
       <h1 className="temp">{Math.round(data.main.temp)}°C</h1>
       <h2 className="city">{data.name}</h2>
 
-     
       <div className="details">
-      <div className="col">
+        <div className="col">
           <img src="/images/feels_like.png" alt="feels_like" />
           <div>
             <p className="feels_like">{data.main.feels_like}°C </p>
@@ -48,8 +47,8 @@ const WeatherCard = () => {
             <p className="wind">{data.wind.speed} km/h</p>
             <p>Wind Speed</p>
           </div>
-         </div>
-         <div className="col">
+        </div>
+        <div className="col">
           <img src="/images/visibility.png" alt="visibility" />
           <div>
             <p className="visibility">{data.visibility} mtr</p>
@@ -57,10 +56,10 @@ const WeatherCard = () => {
           </div>
         </div>
         <div className="col">
-          <img src="/images/air_quality.png" alt="air_quality" />
+          <img src="/images/sea_level.png" alt="sea_level" />
           <div>
-            <p className="air_quality">{data.main.sea_level} </p>
-            <p>Air_Quality</p>
+            <p className="sea_level">{data.main.sea_level} mtr </p>
+            <p>Sea_Level</p>
           </div>
         </div>
       </div>
